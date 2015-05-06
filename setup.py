@@ -6,5 +6,5 @@ setup(name='opengeodb',
       author='Michael Welt',
       author_email='',
       url='https://github.com/mwelt/opengeodb/',
-      packages=['opengeodb'],
+      packages=['opengeodb'], requires=['pymysql']
       )
