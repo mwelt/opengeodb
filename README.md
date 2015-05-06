@@ -1,5 +1,5 @@
 # opengeodb
-Pythoninteface to OpenGeoDB Data based on additional tableset 
+Pythoninteface to OpenGeoDB. Data based on additional tableset 
 as described [here](http://opengeodb.org/wiki/OpenGeoDB_-_Umkreissuche).
 
 ## usage
