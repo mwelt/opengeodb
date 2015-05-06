@@ -2,7 +2,24 @@
 Interface in python to OpenGeoDB. Data based on additional table *zip_coordinates* 
 as described [here](http://opengeodb.org/wiki/OpenGeoDB_-_Umkreissuche).
 
-## installation
+## installation 
+
+You can either use precalculated data from a dump i took a while ago, or
+build *zip_coordinates* table from scratch.
+
+### with dump
+
+* Download my *zip_coordinates* dump from [here](https://dl.dropboxusercontent.com/u/26156549/zip_coordinates-02627_2013-09-18.sql)
+  the dump is based on latest OpenGeoDB data from 2013/09/18. 
+  Import it to your MySql database (change user and db name according 
+  to your settings) with:
+
+```bash
+$ mysql -uopengeodb -p opengeodb < zip_coordinates-02627_2013-09-18.sql
+```
+  
+### from scratch
+
 * Download latest opengeodb dump [here](http://www.fa-technik.adfc.de/code/opengeodb/dump/),
   and import it to your MySql database (change user and db name according
   to your settings) with:
@@ -43,7 +60,7 @@ AND   name.text_locale = "de" /* deutschsprachige Version */
 AND   gl.loc_type IN ( 100600000 /* pol. Gliederung */, 100700000 /* Ortschaft */ );
 ```
 
-* install opengeodb module with pip:
+### install opengeodb module with pip:
 
 ```bash
 $ pip install git+https://github.com/mwelt/opengeodb
