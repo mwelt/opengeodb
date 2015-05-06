@@ -1,5 +1,5 @@
 # opengeodb
-Pythoninterface to OpenGeoDB. Data based on additional table *zip_coordinates* 
+Interface in python to OpenGeoDB. Data based on additional table *zip_coordinates* 
 as described [here](http://opengeodb.org/wiki/OpenGeoDB_-_Umkreissuche).
 
 ## installation
